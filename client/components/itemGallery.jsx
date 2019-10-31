@@ -77,13 +77,6 @@ class ItemGallery extends React.Component {
   }
 
   render() {
-    //for testing
-    StyledCarousel.displayName = 'StyledCarousel';
-    StyledBackBtn.displayName = 'StyledBackBtn';
-    StyledNxtBtn.displayName = 'StyledNxtBtn';
-    StyledSlider.displayName = 'StyledSlider';
-    StyledSlide.displayName = 'StyledSlide';
-
     return (
       <StyledCarousel
         currentSlide={this.props.clickedSlideIndex}

@@ -1,13 +1,7 @@
 # Project Name
 
-> Project description
+> amazone-clone-photo-gallery
 
-## Related Projects
-
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
 
 ## Table of Contents
 
@@ -19,7 +13,7 @@
 
 > Some usage instructions
 
-*** Navigate to server/index.js -- on line 12, change the host string to either your own mongo db (in localhost or in a remote).
+*** Navigate to server/index.js -- on line 12, change the host string to either your own mongo db (in localhost or in a remote)
 
 ## Requirements
 

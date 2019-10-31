@@ -13,7 +13,6 @@
     "start": "node server/server.js",
     "server-dev": "nodemon",
     "react-dev": "webpack -d --watch",
-    "test": "jest"
   },
   "dependencies": {
     "cors": "^2.8.5",
