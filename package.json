@@ -12,7 +12,7 @@
     "seed": "node database/seeder.js",
     "start": "node server/server.js",
     "server-dev": "nodemon",
-    "react-dev": "webpack -d --watch",
+    "react-dev": "webpack -d --watch"
   },
   "dependencies": {
     "cors": "^2.8.5",
