@@ -29,6 +29,8 @@ const get = (cb) => {
 
 const deleteOne = (url, cb) => {
   Picture.deleteOne({url}, (err, data) => {
+    console.log('here')
+
     err ? cb(err) : cb(null, data);
   })
 }

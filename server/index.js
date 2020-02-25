@@ -8,11 +8,12 @@ const router = require('./router');
 var cors = require('cors')
 const mongoose = require('mongoose');
 const db = require('../database/index.js');
+const uri = process.env.HOST;
 
-mongoose.connect(host='mongodb://172.17.0.2:27017/pictures', {useNewUrlParser: true})
+mongoose.connect(host=uri, {useNewUrlParser: true})
 .then(() => {
   console.log('DB connected');
-  db.populateDb();
+
 })
 .catch((e) => {
   console.log(e);
