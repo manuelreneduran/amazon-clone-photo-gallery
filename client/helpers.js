@@ -1,6 +1,6 @@
 function setPictures(pictures) {
-  var id = this.getId();
-  var randomNum = this.getRandomNum(2, 20);
+  var id = getId();
+  var randomNum = getRandomNum(2, 20);
   let mainPicture = [];
   let galleryPictures = [];
   for (let picture in pictures) {
