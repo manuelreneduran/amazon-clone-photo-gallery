@@ -18,7 +18,7 @@ mongoose.connect(host=uri, {useNewUrlParser: true})
 .catch((e) => {
   console.log(e);
 })
-
+//
 const dir = path.parse(__dirname).dir;
 app.use(parser.urlencoded());
 app.use(logger('dev'));
