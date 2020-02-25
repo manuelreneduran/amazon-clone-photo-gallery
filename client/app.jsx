@@ -31,7 +31,7 @@ class App extends React.Component {
 
     componentDidMount() {
       //gets current api path
-      $.get('http://localhost:3003/pictures', (pictures) => {
+      $.get('/pictures', (pictures) => {
         pictures = setPictures(pictures);
         var mainPicture = pictures.mainPicture;
         var galleryPictures = pictures.galleryPictures;
