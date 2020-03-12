@@ -24,30 +24,32 @@ const get = (cb) => {
   Picture.find((err, res) => {
     err ? cb(err) : cb(null, res);
   }).limit(100);
-
 }
 
 const deleteOne = (url, cb) => {
   Picture.deleteOne({url}, (err, data) => {
-    console.log('here')
-
     err ? cb(err) : cb(null, data);
   })
 }
 
-//only run once
-const populateDb = () => {
-  get((err, res) => {
-    if (res.length === 0) {
-      var fileNum = '';
-      for (var i = 1; i <= 100; i++) {
-        fileNum = i;
-        var url = `https://rpt14-front-end-capstone-manuel.s3.us-east-2.amazonaws.com/Images/File${fileNum}.jpg`
-        var newPic = new Picture({url, id: i});
-        newPic.save();
-      }
-    }
-  })
 
-}
-module.exports = {create, populateDb, get, deleteOne};
+//only run once
+// const populateDb = () => {
+//   var fileNum = '';
+//   for (var i = 1; i <= 100; i++) {
+//     fileNum = i;
+//     var url = `https://rpt14-front-end-capstone-manuel.s3.us-east-2.amazonaws.com/Images/File${fileNum}.jpg`
+//     var newPic = new Picture({url, id: i});
+//     newPic.save((err, res) => {
+//       if (err) {
+//         console.log(err);
+//         return;
+//       } else {
+//         console.log(res);
+//       }
+//     });
+//   }
+// }
+
+// populateDb();
+module.exports = {create, get, deleteOne};
